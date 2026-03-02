@@ -47,6 +47,7 @@ class Twitter:
             userIdTweet = self.hashMapUserIdTweetId[current.value]
             if userIdTweet == userId:
                 arr.append(current.value)
+                current = current.next
                 continue
 
             userFollows = self.hashMapUserFollows[userId]
